@@ -1,0 +1,401 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=popp&category=Serif,Sans+Serif');
+
+:root{
+    --primary-color:#FF7F50;
+    --secondary-color:#636e72;
+    --font: 'Poppins', sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+       /*------ BACKGROUND COLOR -------*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    background:white;
+    font-family: var(--font);
+}
+
+       /*------- NAVIGATION BAR --------*/
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    align-items: center;
+    z-index: 999999;
+}
+
+           /*------ LOGO ------ */
+
+.logo{
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right:46%;
+    padding-top: 15px;    
+    
+}
+#fit{
+    color: var(--primary-color);
+}
+
+           /* ------- MENU ------- */
+
+.menu{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: right;
+    padding-right: 100%;
+    
+}
+
+ul a li{
+        text-decoration: none;
+        color: white;
+        margin-inline: 20px;
+        text-transform: uppercase;
+        font-family: var(--font);
+        font-weight: 700;
+        font-size: 16px;
+        
+        
+}
+
+ul a li:hover{
+    color: var(--primary-color)
+}
+
+                /* ------- BANNER & TEXT ------ */
+                      
+.banner{
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 88vh;
+
+}
+.text{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.text h1{
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 60px;
+    transition: .4s;
+    
+}  
+     
+            /* -------- JOIN BUTTON ------- */
+
+.btn{
+    text-decoration:none;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 5cm;
+    height: 50px;
+    background-color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background: transparent;
+}
+
+           /* ------ ROW -------- */
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+/* --------- GRAY, WHITE & ORANGE BOX --------- */
+
+.card{
+    
+    width: 33.33%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.card h2{
+    text-transform: uppercase;
+}
+             /* ----- ABOUT US SECTION----- */
+
+.about-row{
+    background-color: #F4F6F6 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+       /* ----- ABOUT US TEXT ------ */
+.about-left-col{
+    flex-basis: 70%;
+    margin: auto;
+    padding-left: 7%;
+}
+
+       /* ----- ABOUT TITLE ----- */
+.about-left-col h1{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+          /* ----- ABOUT US PARAGRAPH ---- */
+.about-left-col p{
+    color: black;
+    font-size: 16px;
+    align-items: center;
+}
+
+        /* ----- READ MORE BUTTON ----- */
+.about-btn{
+    border: none;
+    cursor: pointer;
+}
+.about-btn :hover{
+    color: var(--primary-color);
+}
+          /* ------- ABOUT BG IMAGE ----- */
+.about-right-col{
+    flex-basis: 30%;
+}
+.about-right-col img{
+    width: 100vh;
+    margin-bottom: -4px;
+}
+
+            /* ---------- WHY CHOOSE US SECTION --------- */
+
+.background{
+    padding:1px;
+    margin: 0px;
+    background: url(img/wcu-bg.jpg);
+    justify-content: center;
+}
+
+.title h1{                  /* ----- TITLE ----- */
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+#choose{
+    color: var(--primary-color);
+}
+
+         /* ----- BOX ----- */
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box-container .box{
+    height: 20%;
+    width: 20%;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+
+    
+}
+
+.box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+            /*--------- OUR GALLERY SECTION ------------ */
+
+.gallery{
+    align-items: center;
+    background: #333;
+    padding: 1px;
+    margin: 0px;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+       /* --- TITLE --- */
+
+.gallery h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+#gallery{
+    color: var(--primary-color);
+}
+
+            /* ----- GALLERY CARD ---- */
+
+.gallery .gallery-box{
+    display: flex;
+    align-items: center;
+    justify-content: content;
+    flex-wrap: wrap;
+    padding-left: 13%;
+
+}
+
+.gallery .gallery-box .photo{
+    height: 20%;
+    margin: 10px;
+    width: 20% ;
+    overflow: hidden;
+    position: relative;
+
+}
+         /* --- IMAGES --- */
+
+.gallery .gallery-box .photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid;
+    border-color: orange;
+    border-radius: 5px;
+    
+}
+
+          /* ---- VIDEO SECTION START ----- */
+
+.container .heading{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    font-family: var(--font);
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+#video{
+    color: var(--primary-color);
+}
+
+.container .video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+}
+
+.container .video-container .video{
+    height: 20%;
+    width: 30%;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+        /* ----- OUR VIDEO SECTION END ------ */
+
+  
+        /* ------ FOOTER SECTION START ----- */
+
+.footer{
+    background: black;
+    padding-top: -5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .gym{
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right:46%;
+    padding-top: 15px; 
+    color: white;   
+}
+
+#fit{
+    color: var(--primary-color);
+}
+
+.footer-text{
+    color: white;
+    font-size: 16px;
+    font-style: var(--font);
+
+}
+
+        /* ------ FOOTER SECTION END ----- */
